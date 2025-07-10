@@ -2,7 +2,7 @@
 
 [Demo Screenshot](./images/screenshot.png)
 
-COMP5347 Assignment 1 - A HTML/CSS/JavaScript based online bookstore
+A HTML/CSS/JavaScript based online bookstore
 
 ❗ **Critical Running Instructions** ❗  
 **DO NOT directly open `index.html` in browser** - This will cause data loading failure due to security restrictions.  
