@@ -32,7 +32,7 @@ A HTML/CSS/JavaScript based online bookstore
 
 ## Directory Structure
 ```plaintext
-yzho0062_Assignment1/
+Shopping Web Frontend/
 ├── index.html            # Main entry point
 ├── index.css             # Stylesheets
 ├── index.js              # Core logic
