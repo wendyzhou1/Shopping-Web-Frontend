@@ -6,7 +6,7 @@ A HTML/CSS/JavaScript based online bookstore
 
 ❗ **Critical Running Instructions** ❗  
 **DO NOT directly open `index.html` in browser** - This will cause data loading failure due to security restrictions.  
-**You CAM use the methods below to open** ⬇️
+**You CAN use the methods below to open** ⬇️
 
 ## Quick Start
 ### Method 1: VS Code Live Server
