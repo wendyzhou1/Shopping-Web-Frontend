@@ -1,0 +1,204 @@
+﻿/* general text formatting */
+:root {
+   --bg-color: #ffffff;
+   --text-color: #333333;
+   --primary-color: #95BEF0;
+   --secondary-bg: #EBF4FB;
+   --table-header-bg: #95BEF0;
+   --table-border: #EBF4FB;
+   --button-bg: #95BEF0;
+   --button-hover: #7BA7D9;
+   --cart-backgroud:#EBF4FB;
+   --highlight-color: rgba(255, 235, 59, 0.3);
+}
+
+.dark-mode {
+   --bg-color: #1a1a1a;
+   --text-color: #e0e0e0;
+   --primary-color: #2d4059;
+   --secondary-bg: #2d2d2d;
+   --table-header-bg: #2d2d2d;
+   --table-border: #3d3d3d;
+   --button-bg: #3d3d3d;
+   --button-hover: #4d4d4d;
+   --cart-backgroud:#e0e0e0;
+   --highlight-color: rgba(255, 195, 0, 0.3);
+}
+
+h1, h2, h3, nav, footer {
+   font-family: Georgia, Cambria, "Times New Roman", serif;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+body {
+   font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+   font-size: 80%;
+   margin: 0;
+   padding: 15px;
+   background-color: var(--bg-color);
+   color: var(--text-color);
+   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Search section styles */
+div#searchBox, div#listBox {
+   margin: 0.25em auto;
+   background-color: var(--secondary-bg);
+   border-color: var(--table-border);
+   padding: 1em;
+   width: 80%;
+}
+
+div#searchBox {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 0.5rem;
+   margin-top: 1em;
+}
+
+div#listBox { 
+   margin-top: 1em; 
+   background-color: #FAFCFF;
+}
+
+/* Cart section styles */
+.cart-wrapper {
+   display: inline-flex;
+   align-items: center;
+   background-color: var(--secondary-bg);
+   padding: 8px;
+   margin-left: auto;
+}
+
+.cart-indicator {
+   position: relative;
+   margin-left: auto;
+}
+
+.cart-icon {
+   width: 32px;
+   height: 32px;
+   object-fit: contain;
+   transition: filter 0.3s ease;
+}
+
+/* Dark mode section styles */
+.dark-mode .cart-icon {
+   width: 32px;
+   height: 32px;
+   content: url('images/white_cart.png');
+}
+
+#cartCount {
+   position: absolute;
+   top: -8px;
+   right: -8px;
+   background: #e74c3c;
+   color: white;
+   padding: 2px 6px;
+   border-radius: 50%;
+   font-size: 0.8rem;
+}
+
+/* Button and list styles */
+button {
+   padding: 0.5rem 1rem;
+   background: var(--button-bg);
+   border: none;
+   cursor: pointer;
+   margin-right: 1rem;
+   color:var(--text-color);
+   border-radius: 10px;
+   box-shadow: 0 2px 4px var(--text-color);
+   transition: filter 0.3s ease;
+}
+
+button:hover {
+   transform: translateY(-1px);
+   background: var(--button-hover);
+   box-shadow: 0 4px 8px var(--text-color);
+   transition: filter 0.3s ease;
+}
+
+table {
+   border: collapse; 
+   border-spacing: 0;
+}
+
+#bookTable {
+   display: block;
+   overflow-x: auto;
+   width: 100%;
+   border-collapse: collapse;
+   background: var(--table-border);
+   table-layout: fixed;
+   transition: filter 0.3s ease;
+}
+
+caption {
+   background-color: var(--table-header-bg);
+   padding: 0.5em 0.5em;
+   font-weight: bold;
+   font-size: 1.2em;
+}
+
+#bookTable th, #bookTable td {
+   padding: 0.75rem;
+   text-align: left;
+   border-bottom: var(--table-border);
+   width: auto;
+}
+
+#bookTable th {
+   background: var(--table-header-bg);
+}
+
+#bookTable th:nth-child(1) { width: 40px; }
+#bookTable th:nth-child(2) { width: 100px; }
+#bookTable th:nth-child(3) { width: 250px; }
+#bookTable th:nth-child(4) { width: 150px; }
+#bookTable th:nth-child(5) { width: 100px; }
+#bookTable th:nth-child(6) { width: 150px; }
+#bookTable th:nth-child(7) { width: 100px; }
+#bookTable th:nth-child(8) { width: 150px; }
+#bookTable th:nth-child(9) { width: 120px; }
+
+.book-cover {
+   width: 50px;
+   height: auto;
+}
+
+.highlight {
+   background-color: var(--highlight-color);
+   position: relative;
+}
+
+.rating-stars {
+   min-width: 120px;
+   vertical-align: middle;
+}
+
+.star-icon {
+   width: 20px;
+   height: 20px;
+   margin-right: 2px;
+   vertical-align: middle;
+   transition: transform 0.2s ease;
+}
+
+#categoryFilter {
+   min-width: 180px;
+   margin-right: 15px;
+}
+
+.no-results td {
+   padding: 2rem;
+   text-align: center;
+   background: #f8f9fa;
+}
+
+.book-selector:checked + td {
+   background-color: var(--secondary-bg);
+}

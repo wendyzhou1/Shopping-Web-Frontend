@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title>COMP5347 Assignment One</title>
+   <link rel="stylesheet" href="index.css" />
+   <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+   <header>
+   <h1> B2YBooks Online Book Store</h1>
+      <h2><button id="themeToggle">🌓 Toggle Dark Mode</button></h2>
+   </header>
+
+<form method="get" action="">
+      <div id="searchBox">
+         <input type="search" id="searchInput" placeholder="Search books...">
+         <button type="button" id="searchBtn">Search</button>
+
+         <select id="categoryFilter">
+            <option value="">All Categories</option>
+         </select>
+         <button type="button" id="filterBtn">Filter</button>
+         <button type="button" id="resetFilter">Reset</button>
+
+         <div class="cart-wrapper">
+            <div class="cart-indicator">
+               <button type="button" id="resetCartBtn">Reset Cart</button>
+               <button type="button" id="addToCart">Add to Cart</button>
+               <img src="images/shopping_cart.png" alt="Shopping Cart" class="cart-icon">
+               <output id="cartCount">0</output>
+            </div>
+         </div>
+      </div>
+
+
+      <div id="listBox">
+         <table id="bookTable">
+            <caption>Available Books</caption>
+            <thead>
+            <tr>
+               <th scope="col">Select</th>
+               <th scope="col">Cover</th>
+               <th scope="col">Title</th>
+               <th scope="col">Author</th>
+               <th scope="col">Year</th>
+               <th scope="col">Rating</th>
+               <th scope="col">Price</th>
+               <th scope="col">Publisher</th>
+               <th scope="col">Category</th>
+            </tr>
+            </thead>
+            <tbody id="bookList"></tbody>
+         </table>
+      </div>   
+   </form>
+</body>
+</html>
